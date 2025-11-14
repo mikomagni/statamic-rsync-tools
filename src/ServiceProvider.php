@@ -13,10 +13,8 @@ class ServiceProvider extends AddonServiceProvider
         AssetsPush::class,
     ];
 
-    public function boot()
+    public function bootAddon()
     {
-        parent::boot();
-
         $this->loadTranslationsFrom(__DIR__ . '/resources/lang', 'rsync');
 
         $this->publishes([

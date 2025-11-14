@@ -1,5 +1,9 @@
 # Statamic Asset Sync Pro
 
+> **🚧 DEV BRANCH - Statamic 6 Alpha**
+> This is the development branch for Statamic 6 compatibility. For production use with Statamic 5, please use the [main branch](../../tree/main) or install v1.x.
+> See [STATAMIC-6-DEV.md](STATAMIC-6-DEV.md) for installation and testing instructions.
+
 Keep your assets in sync between environments, and keep your Git clean. A powerful rsync-based addon for transferring files between local and remote servers.
 
 ## Why Use This Addon?
@@ -66,19 +70,40 @@ php please assets:push --dry-run
 
 ## Requirements
 
-- Statamic 5
-- PHP 8.1+
+- Statamic 6.x
+- PHP 8.2+
+- Laravel 11.x
 - rsync installed on your system (GPL-licensed, installed separately)
 - SSH access to remote server
 
+> **Note:** For Statamic 5, use version 1.x from the main branch.
+
 ## Installation
 
-### Via Composer
+> **Important:** This is the Statamic 6 version (dev branch). For production use with Statamic 5, please use the stable 1.x release from the main branch.
 
-1. Install the addon:
+### For Statamic 6 Alpha Testing
+
+1. Install the addon from the dev branch:
 
 ```bash
-composer require mikomagni/statamic-asset-sync-pro
+composer require mikomagni/statamic-asset-sync-pro:dev-dev
+```
+
+Or add to your `composer.json`:
+
+```json
+{
+    "require": {
+        "mikomagni/statamic-asset-sync-pro": "dev-dev"
+    }
+}
+```
+
+### For Statamic 5 (Stable)
+
+```bash
+composer require mikomagni/statamic-asset-sync-pro:^1.0
 ```
 
 2. Install rsync on your system (required dependency, GPL-licensed):

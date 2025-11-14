@@ -5,6 +5,41 @@ All notable changes to Statamic Asset Sync Pro will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] - 2.x (Statamic 6 Alpha - Not yet on Marketplace)
+
+> **Note:** This version is for Statamic 6 alpha testing only. Install from GitHub using:
+> ```bash
+> composer require mikomagni/statamic-asset-sync-pro:dev-2.x
+> ```
+> This will be released to the Statamic Marketplace as v2.0.0 when Statamic 6 is officially released.
+
+### Changed
+- **BREAKING**: Updated for Statamic 6 compatibility
+- **BREAKING**: Minimum PHP version increased from 8.1 to 8.2
+- **BREAKING**: ServiceProvider now uses `bootAddon()` method instead of `boot()`
+- Updated dependency: `statamic/cms` from ^5.0 to ^6.0
+- Updated dependency: `symfony/process` from ^6.0|^7.0 to ^7.0
+
+### Added
+- PHPUnit test suite with Orchestra Testbench integration
+- `tests/TestCase.php` extending `Statamic\Testing\AddonTestCase`
+- `tests/ExampleTest.php` with basic command registration tests
+- `phpunit.xml` configuration for PHPUnit 11
+- Dev dependencies: `orchestra/testbench` ^9.0 and `phpunit/phpunit` ^11.0
+
+### Migration from 1.x
+- Requires PHP 8.2 or higher
+- Requires Statamic 6.x
+- All functionality remains identical - only framework compatibility updated
+- No configuration changes required
+- Run `composer update` to install updated dependencies
+
+---
+
+## Statamic 5.x Releases (Available on Marketplace)
+
+---
+
 ## [1.0.3] - 01-08-2025
 - Markdown fix for Statamic Marketplace
 

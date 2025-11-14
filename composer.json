@@ -1,6 +1,5 @@
 {
     "name": "mikomagni/statamic-asset-sync-pro",
-    "version": "1.0.3",
     "license": "proprietary",
     "type": "statamic-addon",
     "minimum-stability": "stable",
@@ -18,14 +17,23 @@
         }
     ],
     "require": {
-        "php": "^8.1",
-        "statamic/cms": "^5.0",
+        "php": "^8.2",
+        "statamic/cms": "^6.0",
         "laravel/prompts": "^0.3",
-        "symfony/process": "^6.0|^7.0"
+        "symfony/process": "^7.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0",
+        "phpunit/phpunit": "^11.0"
     },
     "autoload": {
         "psr-4": {
             "MikoMagni\\RsyncCommands\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MikoMagni\\RsyncCommands\\Tests\\": "tests"
         }
     },
     "extra": {
