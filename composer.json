@@ -1,19 +1,20 @@
 {
     "name": "mikomagni/statamic-asset-sync-pro",
+    "version": "2.0.0",
     "license": "proprietary",
     "type": "statamic-addon",
     "minimum-stability": "stable",
     "description": "Statamic Asset Sync Pro - Keep your assets in sync between environments, and keep your Git clean.",
     "keywords": ["statamic", "rsync", "sync", "deploy", "assets", "files", "remote", "transfer"],
-    "homepage": "https://clandestina.com.au",
+    "homepage": "https://graffio.co",
     "support": {
         "issues": "https://github.com/mikomagni/statamic-asset-sync-pro/issues",
         "source": "https://github.com/mikomagni/statamic-asset-sync-pro"
     },
     "authors": [
         {
-            "name": "MikoMagni",
-            "homepage": "https://clandestina.com.au"
+            "name": "Graffio",
+            "homepage": "https://graffio.co"
         }
     ],
     "require": {
@@ -40,13 +41,16 @@
         "statamic": {
             "name": "Statamic Asset Sync Pro",
             "description": "Keep your assets in sync between environments, and keep your Git clean",
-            "developer": "MikoMagni",
-            "developer_url": "https://clandestina.com.au"
+            "developer": "Graffio",
+            "developer_url": "https://graffio.co"
         },
         "laravel": {
             "providers": [
                 "MikoMagni\\RsyncCommands\\ServiceProvider"
             ]
+        },
+        "branch-alias": {
+            "dev-v6": "6.x-dev"
         }
     }
 }

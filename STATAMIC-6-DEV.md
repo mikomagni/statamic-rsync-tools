@@ -1,14 +1,14 @@
-# Statamic 6 Development Branch
+# Statamic 6 Version (v6 Branch)
 
 This branch contains the **Statamic 6 compatible version** of Statamic Asset Sync Pro.
 
-## ⚠️ Alpha/Testing Status
+## ⚠️ Development Status
 
-- **Statamic 6 is currently in alpha** - this version is for early testing only
+- **Statamic 6 support** - this version is for Statamic 6 sites
 - **Not published on Statamic Marketplace yet** - will be released as v2.0.0 when Statamic 6 is stable
-- **Use at your own risk** in development environments only
+- **Use in development/production** at your discretion
 
-## Installation for Testing
+## Installation
 
 ### Option 1: Install from GitHub (Recommended)
 
@@ -23,7 +23,7 @@ Add to your Statamic 6 site's `composer.json`:
         }
     ],
     "require": {
-        "mikomagni/statamic-asset-sync-pro": "dev-dev"
+        "mikomagni/statamic-asset-sync-pro": "v6.x-dev"
     }
 }
 ```
@@ -31,6 +31,14 @@ Add to your Statamic 6 site's `composer.json`:
 Then run:
 ```bash
 composer update mikomagni/statamic-asset-sync-pro
+```
+
+### Quick Install
+
+If the repository is already configured:
+
+```bash
+composer require mikomagni/statamic-asset-sync-pro:v6.x-dev
 ```
 
 ### Option 2: Path Repository (Local Development)
@@ -123,7 +131,7 @@ Please mention:
 2. **Update PHP to 8.2+** if needed
 3. **Update the addon**:
    ```bash
-   composer require mikomagni/statamic-asset-sync-pro:dev-dev
+   composer require mikomagni/statamic-asset-sync-pro:v6.x-dev
    ```
 4. **Clear caches**:
    ```bash
