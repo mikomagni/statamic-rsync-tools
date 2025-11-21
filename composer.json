@@ -1,6 +1,5 @@
 {
     "name": "mikomagni/statamic-asset-sync-pro",
-    "version": "2.0.0",
     "license": "proprietary",
     "type": "statamic-addon",
     "minimum-stability": "stable",
