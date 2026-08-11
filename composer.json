@@ -20,7 +20,7 @@
         "php": "^8.2",
         "statamic/cms": "^6.0",
         "laravel/prompts": "^0.3",
-        "symfony/process": "^7.0"
+        "symfony/process": "^7.0 || ^8.0"
     },
     "require-dev": {
         "orchestra/testbench": "^9.0",
