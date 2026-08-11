@@ -18,7 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **BREAKING**: Minimum PHP version increased from 8.1 to 8.2
 - **BREAKING**: ServiceProvider now uses `bootAddon()` method instead of `boot()`
 - Updated dependency: `statamic/cms` from ^5.0 to ^6.0
-- Updated dependency: `symfony/process` from ^6.0|^7.0 to ^7.0
+- Updated dependency: `symfony/process` from ^6.0|^7.0 to ^7.0 || ^8.0 (Laravel 13 compatibility)
 
 ### Added
 - PHPUnit test suite with Orchestra Testbench integration
